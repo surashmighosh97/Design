@@ -1,0 +1,59 @@
+<html>
+<title>Login</title>
+<head>
+<script src="sweetalert-master/dist/sweetalert.min.js"></script>
+<link rel="stylesheet" type="text/css" href="sweetalert-master/dist/sweetalert.css">
+<style type="text/css">
+img{
+	height: 100px;
+	width: 100px;
+
+	border-radius: 100%;
+	border: 2px;
+}
+.right
+{
+text-align: right;
+margin-top: 12%;
+ 
+background-position: center; 
+
+}
+body{
+	background-color:white;
+background-size: cover;
+}
+#but{
+background-color:green;
+}
+</style>
+
+
+</head>
+<body  background ="images (1).jpg">
+	<div class="right">
+		<img src="surashmi.jpg"><br>
+		<h1> Welcome to colorful world</h1>
+		<label><b>Username or email address</b></label><br>
+
+		<input id="user" type="text" name="un" placeholder="Username/email"><br><br>
+		<label><b>Password</b></label><br>
+		<input  id="pass"type="password" name="sign in" placeholder="password"><br><br>
+		<input  id="but" type ="Submit" name="bu" value="Sign in"><br><br>
+
+	</div>
+	<script type="text/javascript">
+      function check(){
+      var user=document.getElementById('user').value;
+      var pass=document.getElementById('pass').value;
+      if(user=='')
+      	swal("Username empty");
+      else if(pass=='')
+      	swal("password empty");
+      else 
+      	swal("Welcome "+user);
+      }
+
+	</script>
+</body>
+</html>
